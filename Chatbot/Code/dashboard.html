@@ -9,6 +9,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("session.php")
+            .then(response => response.json())
+            .then(data => {
+                if (data.username) {
+                    let chatBox = document.getElementById("chat-box");
+    
+                    // Afficher "User, vient de rejoindre le chat"
+                    let joinMessage = document.createElement("div");
+                    joinMessage.classList.add("message", "join");
+                    joinMessage.textContent = "- "+ data.username + " vient de rejoindre le chat. -";
+                    chatBox.appendChild(joinMessage);
+    
+                    // Sauvegarder le nom de l'utilisateur pour l'affichage du bot
+                    sessionStorage.setItem("username", data.username);
+                }
+            });
+    });
+    </script>
+    
+
 <body>
 <button id="logout-btn">log out</button>
 

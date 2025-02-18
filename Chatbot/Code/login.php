@@ -1,4 +1,5 @@
 <?php
+session_start();
 header("Content-Type: application/json");
 
 // Chemin du fichier JSON
@@ -26,12 +27,14 @@ $users = json_decode(file_get_contents($filename), true) ?? [];
 
 // Vérifier si l'email existe
 foreach ($users as $user) {
-    if ($user["email"] === $email && $user["password"] === $password) { // ⚠️ Sécuriser le password avec hash (voir plus bas)
-        echo json_encode(["success" => true]);
+    if ($user["email"] === $email && $user["password"] === $password){ // ⚠️ Sécuriser le password avec hash
+        $_SESSION["username"] = $user["username"];
+        echo json_encode(["success" => true, "username" =>$user["username"]]);
         exit;
     }
     if (password_verify($password, $user["password"])) {
-        echo json_encode(["success" => true]);
+        $_SESSION["username"] = $user["username"];
+        echo json_encode(["success" => true,  "username" => $user["username"]]);
         exit;
     }
 }

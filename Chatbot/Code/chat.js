@@ -9,6 +9,7 @@ document.getElementById("chat-input").addEventListener("keypress", function(even
 function sendMessage() {
     let input = document.getElementById("chat-input");
     let message = input.value.trim();
+    let username = sessionStorage.getItem("username") || "User";
 
     if (message !== "") {
         let chatBox = document.getElementById("chat-box");
@@ -26,7 +27,7 @@ function sendMessage() {
         setTimeout(() => {
             let botMessage = document.createElement("div");
             botMessage.classList.add("message", "bot");
-            botMessage.textContent = "Hello, user";
+            botMessage.textContent = "Hello, "+username;
             chatBox.appendChild(botMessage);
 
             chatBox.scrollTop = chatBox.scrollHeight;
