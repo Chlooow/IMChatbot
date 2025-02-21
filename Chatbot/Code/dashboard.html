@@ -21,19 +21,20 @@
                     // Afficher "User, vient de rejoindre le chat"
                     let joinMessage = document.createElement("div");
                     joinMessage.classList.add("message", "join");
-                    joinMessage.textContent = "- "+ data.username + " vient de rejoindre le chat. -";
+                    joinMessage.textContent = "- "+ data.username + " has joined the chat. -";
                     chatBox.appendChild(joinMessage);
     
                     // Sauvegarder le nom de l'utilisateur pour l'affichage du bot
                     sessionStorage.setItem("username", data.username);
                 }
             });
-    });
+        });
+
     </script>
     
 
 <body>
-<button id="logout-btn">log out</button>
+<button id="logout-btn">Exit</button>
 
     <div class="chat-container">
         <header>
