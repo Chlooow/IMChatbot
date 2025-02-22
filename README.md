@@ -47,7 +47,7 @@ Si vous aimez ce projet et souhaitez contribuer à son développement, vous pouv
 - En **proposant des améliorations** via des pull requests.
 - En partageant ce projet avec d'autres passionnés de Monsta X et de chatbots.
 
-Si vous souhaitez apporter une **contribution financière** pour soutenir ce projet, vous pouvez le faire via  ou par toute autre plateforme indiquée par le créateur. Les fonds serviront à améliorer l'infrastructure du projet et à ajouter de nouvelles fonctionnalités.
+Si vous souhaitez apporter une **contribution financière** pour soutenir ce projet, vous pouvez le faire via [Mon compte Kofi](https://ko-fi.com/cholorskofi) Les fonds seront utilisé pour supporter mon travail et ainsi pouvoir proposer d'autre projet comme celui-ci .
 
 ## Licence
 
