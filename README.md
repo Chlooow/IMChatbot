@@ -35,7 +35,7 @@ les informations relatives à la certification et aux ressources d'IBM Watson As
 
 ## Avertissement
 
-Ce projet **Keo Chatbot - I.M de Monsta X** n'est pas affilié, sponsorisé ou endossé par **I.M** (Lim Changkyun) ou **Sony Music**. Il s'agit d'un projet **personnel** créé dans le but de **divertissement** et de rendre hommage à l'univers de I.M et de Monsta X.
+Ce projet **I.M de Monsta X** n'est pas affilié, sponsorisé ou endossé par **I.M** (Lim Changkyun) ou **Sony Music**. Il s'agit d'un projet **personnel** créé dans le but de **divertissement** et de rendre hommage à l'univers de I.M et de Monsta X.
 
 Tout usage du chatbot à des fins **malveillantes**, telles que la diffusion de propos haineux, illégaux ou nuisibles, sera **sanctionné**. L'utilisation de ce projet se fait sous la **responsabilité de l'utilisateur**.
 
