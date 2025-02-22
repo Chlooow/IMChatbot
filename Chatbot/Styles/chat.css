@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 #logout-btn {
@@ -160,4 +161,124 @@ header {
     font-style: italic;
     color: gray;
     margin-bottom: 10px;
+}
+
+/* Mode sombre */
+.dark-mode {
+    background-color: #121212;
+    color: #121212;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/* Mode sombre pour les messages */
+.dark-mode .message {
+    background-color: #333;
+    color: white;
+}
+
+/* Mode sombre pour l'input */
+.dark-mode #message-input {
+    background-color: #2b2b2b;
+}
+
+/* Mode sombre pour les icônes */
+.dark-mode .icon, 
+.dark-mode .icon2, 
+.dark-mode .emoji {
+    filter: invert(1); /* Inverse les couleurs pour les icônes blanches */
+}
+
+.hidden {
+    display: none;
+}
+
+.dark-mode .chat-container {
+    background-color: #1e1e1e;
+}
+
+.dark-mode #logout-btn {
+    background: #121212;
+    color: #ffffff ;
+}
+
+.dark-mode header {
+    background-color: #2b2b2b;
+}
+
+/* Menu des paramètres caché */
+#settings-menu {
+    /*display: none;*/
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+#settings-menu.hidden {
+    display: none;
+}
+
+.dark-mode #setting-menu {
+    background-color: #555;
+    color: #555;
+}
+
+#settings-menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*monbebe mode */
+
+.monbebe-mode {
+    background-color: #dd6fe6;
+    color: #dd6fe6;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.monbebe-mode .chat-container {
+    background-color: #a345ab;
+}
+
+.monbebe-mode .message {
+    background-color: #6c2972;
+    color: #fff;
+}
+
+.monbebe-mode #setting-menu {
+    background-color: #f9cefd;
+    color: #66003e;
+}
+
+.monbebe-mode .icon, 
+.monbebe-mode .icon2, 
+.monbebe-mode .emoji {
+    color: #fff; /* Inverse les couleurs pour les icônes blanches */
+}
+
+/* Mode sombre pour l'input */
+.monbebe-mode #message-input {
+    background-color: #6c2972;
+}
+
+.monbebe-mode .join {
+    text-align: center;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.monbebe-mode #logout-btn {
+    background: #f9cefd;
+    color: #ffffff ;
+}
+
+.monbebe-mode header {
+    background-color: #6c2972;
 }

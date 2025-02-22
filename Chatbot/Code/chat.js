@@ -152,7 +152,74 @@ function sendMessage() {
             }
         });
 });*/
+// ___________________________ mode sombre et light __________________________
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const settingsIcon = document.querySelector(".icon"); // L'icône des paramètres
+    const settingsMenu = document.getElementById("settings-menu");
+    const toggleDarkModeBtn = document.getElementById("darkmode-switch");
+    const toggleMonbebemodeBtn = document.getElementById("monbebe-switch");
+
+    // Vérifier si le mode sombre est activé dans le stockage local
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        toggleDarkModeBtn.checked = true;
+        localStorage.setItem("monbebeMode", "disabled");
+    }
+
+    if (localStorage.getItem("monbebeMode") === "enabled") {
+        document.body.classList.add("monbebe-mode");
+        toggleMonbebemodeBtn.checked = true;
+        localStorage.setItem("darkMode", "disabled");
+    }
+
+    // Ouvrir/fermer le menu des paramètres
+    settingsIcon.addEventListener("click", function () {
+        settingsMenu.classList.toggle("hidden");
+    });
+
+    // Activer/Désactiver le mode sombre
+    toggleDarkModeBtn.addEventListener("change", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if(toggleDarkModeBtn.checked) {
+            document.body.classList.add("dark-mode");
+            document.body.classList.remove("monbebe-mode"); // Désactiver Monbebe mode
+            toggleMonbebemodeBtn.checked = false; // Décocher Monbebe mode
+            localStorage.setItem("darkMode", "enabled");
+            localStorage.setItem("monbebeMode", "disabled");
+        } else {
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("darkMode", "disabled");
+        }
+
+        // Sauvegarder l'état du mode sombre dans le localStorage
+        /*if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }*/
+    });
+
+        toggleMonbebemodeBtn.addEventListener("change", function () {
+        document.body.classList.toggle("monbebe-mode");
+
+        if(toggleMonbebemodeBtn.checked) {
+            document.body.classList.add("monbebe-mode");
+            document.body.classList.remove("dark-mode"); // Désactiver Dark mode
+            toggleDarkModeBtn.checked = false; // Décocher Dark mode
+            localStorage.setItem("monbebeMode", "enabled");
+            localStorage.setItem("darkMode", "disabled");
+        } else {
+            document.body.classList.remove("monbebe-mode");
+            localStorage.setItem("monbebeMode", "disabled");
+        }
+
+    });
+});
+
+// ________________
 // bouton de exit
 document.getElementById("logout-btn").addEventListener("click", function() {
     fetch("logout2.php").then(() => {

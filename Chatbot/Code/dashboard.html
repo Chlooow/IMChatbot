@@ -43,7 +43,23 @@
                 <div class="online-status"></div>
             </div>
             <img src="../Assets/im-logo.png" alt="IM Logo" class="icon2">
-            <img src="../Assets/settings-white.png" alt="Settings" class="icon">
+            <img src="../Assets/settings-white.png" alt="Settings" class="icon" id="icon">
+            <div id="settings-menu" class="hidden">
+                <!-- dark mode switch -->
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="darkmode-switch">
+                    <label class="form-check-label" for="darkmode-switch"> Dark Mode</label>
+                  </div>
+
+                  <!-- monbebe mode switch -->
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="monbebe-switch">
+                    <label class="form-check-label" for="monbebe-switch">Monbebe mode</label>
+                  </div>
+                <button id="languages"> 🇬🇧 </button>
+                <button id="languages"> &#127472;&#127479;</button>
+            </div>
+            
         </header>
 
         <div id="chat-box">
@@ -53,7 +69,7 @@
         <div id="message-input">
             <img src="../Assets/happy-white.png" class="emoji">
             <input type="text" id="chat-input" placeholder="Type your message here...">
-            <img id="send-btn" src="../Assets/send-white.png">
+            <img id="send-btn" src="../Assets/send-white.png" class="icon">
         </div>
     </div>
 
