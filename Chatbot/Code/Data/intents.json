@@ -1,0 +1,5 @@
+{
+    "greetings": ["Hello", "Hey", "Good Morning", "Hi", "What's up", "Wassup", "Yo", "안녕", "안녕하세요"],
+    "goodbye": ["Bye", "Goodbye", "See you", "Take care"],
+    "thanks": ["Thanks", "Thank you", "Merci", "Appreciate it", "thx"]
+}
