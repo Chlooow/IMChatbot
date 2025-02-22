@@ -1,0 +1,17 @@
+{
+    "greetings": [
+        "Hey, {username}! How are you today?",
+        "Hi, {username}! What's up?",
+        "Hello, {username}! How's it going?"
+    ],
+    "goodbye": [
+        "Bye, {username}!",
+        "Goodbye, {username}!",
+        "Take care, {username}!"
+    ],
+    "thanks": [
+        "You're welcome, {username}! 😊",
+        "No problem, {username}! 😊",
+        "Glad to help, {username}! 😊"
+    ]
+}
