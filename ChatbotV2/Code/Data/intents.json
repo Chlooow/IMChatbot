@@ -1,5 +1,20 @@
 {
-    "greetings": ["Hello", "Hey", "Good Morning", "Hi", "What's up", "Wassup", "Yo", "안녕", "안녕하세요"],
-    "goodbye": ["Bye", "Goodbye", "See you", "Take care"],
-    "thanks": ["Thanks", "Thank you", "Merci", "Appreciate it", "thx"]
+    "greetings": ["Hello", "Hey", "Good Morning", "Hi", "What's up", "Wassup", "Yo"],
+    "goodbye": ["Bye", "Goodbye", "See you", "Take care", "love you"],
+    "thanks": ["Thanks", "Thank you", "I love it", "Appreciate it", "thx"],
+    "introduce": ["Who are you?", "What do you do?"
+    , "What are you up to?", "I don't know you", "who r u?"
+    , "what's I.M?", "who's I.M", "what is your name ?"
+    , "your name ?", "are you a singer?", "what is your job ?"],
+    "jokes": ["tell me a joke!", "joke please","make me laugh", "i wanna laugh", "i want to laugh", "joke for me","do you know a joke?", "joke"],
+    "talk_about_monsta": ["who is monsta x?", "who is monsta x for you ?"],
+    "fav_song": ["what is your favorite song ?", "fav song?", "a song that you like?", "i want to know your favorite song"],
+    "upcoming_project": ["what's next ?", "what is your project?", "new song coming up?", "world tour when?"
+    , "what are you guys going to do?", "new song or secret?", "I want a next comeback", "which song are you going to do?"],
+    "fansupport": ["I love your work!", "I will alway be by your side",
+     "I like your songs", "you're so fine", "i'm a monbebe since a long time", "i'm a new monbebe"],
+    "userleave": ["i'm leaving", "it's was nice talking to you", "i'll go now", "it's time to say bye now",
+     "it's time for me", "it's time for me to leave", "i have to go I.M", "I have to go", "i will leave now",
+    "i will leave", "i don't want to leave"]
+
 }

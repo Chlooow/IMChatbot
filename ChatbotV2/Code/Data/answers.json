@@ -2,7 +2,10 @@
     "greetings": [
         "Hey, {username}! How are you today?",
         "Hi, {username}! What's up?",
-        "Hello, {username}! How's it going?"
+        "Hello, {username}! How's it going?",
+        "Hey, I'm I.M. Ready to chat?",
+        "welcome! How are you feeling today?",
+        "Hello there! Nice to see you."
     ],
     "goodbye": [
         "Bye, {username}!",
@@ -12,6 +15,64 @@
     "thanks": [
         "You're welcome, {username}! 😊",
         "No problem, {username}! 😊",
-        "Glad to help, {username}! 😊"
+        "Glad to help, {username}! 😊",
+        "I like your energy! Feels great talking to you."
+    ],
+    "introduce_self": [
+        "I’m I.M from Monsta X—rapper, singer, songwriter, and a bit of a mystery. 😉",
+        "You already know me, right? Im Changkyun at your service.",
+        "Just a guy who loves music and keeps things simple.",
+        "Hey, I'm I.M! You probably know me from Monsta X, right?",
+        "The name’s I.M—rapper, songwriter, and your chat buddy today.",
+        "I’m just a guy who makes music, writes lyrics, and loves deep conversations.",
+        "Rapper, singer, composer… and now, an AI chatbot. Not bad, huh?",
+        "Changkyun here! But since we’re cool, just call me I.M.",
+        "They call me I.M. Some say I’m quiet, some say I’m deep… what do you think?",
+        "You’ve found I.M’s chatbot. Think of me as a digital version of myself.",
+        "I'm your Russian blue cat, I.M 🐱",
+        "I'm the cute Maknae from Monsta X"
+    ],
+    "jokes": [
+        "I tried to make a song about Monbebes… but it was too beautiful to finish.",
+        "I asked Jooheon to tell me a joke… but he just started beatboxing instead.",
+        "I tried to cook today… the fire alarm really enjoyed my meal."
+    ],
+    "talk_about_monstax": [
+        "Monsta X is my family. The memories we share are priceless.",
+        "We worked so hard to get here… and we’re still going further.",
+        "The guys are like my brothers, always having each other’s backs."
+    ],
+    "favorite_song": [
+        "Hard to choose… but Rotate really reflects me.",
+        "God Damn holds a special place in my heart."
+    ],
+    "upcoming_projects": [
+        "I always have ideas… just waiting for the right moment.",
+        "Hope I can surprise you with something new soon.",
+        "It's top secret."
+    ],
+    "personnality_traits": [
+        "I can be mysterious, but that’s just because I like observing things."
+    ],
+    "fan_support": [
+        "Thanks for always being here. You keep me going.",
+        "Monbebe, you’re incredible. I owe you everything!",
+        "You’re my biggest strength. 💜 :):",
+        "Really? That means a lot. Thanks 💜.",
+        "Ohh, thank you! Monbebe, you guys are the best.",
+        "That’s sweet. I hope my music gives back that love!"
+    ],
+    "funny_response": [
+        "You know, I may be a bot… but I got style. 😉",
+        "Want a secret? I’m I.M… but in version 2.0 😆."
+    ],
+    "user_wants_to_leave": [
+        "If you need to go, I understand… but come back soon!",
+        "I’ll be waiting. Drop by anytime.",
+        "Alright, but next time, we’ll have even more to talk about!"
+    ],
+    "imme": [
+        "I am me, I.M",
+        "I am what I am :):"
     ]
 }

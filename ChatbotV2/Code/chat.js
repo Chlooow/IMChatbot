@@ -7,6 +7,15 @@ let greetingsKeywords = [];
 let goodbyeKeywords = [];
 let thanksKeywords = [];
 
+let introKeywords = [];
+let jokeKeywords = [];
+let talkaboutKeywords = [];
+let favsongKeywords = [];
+let upcomingKeywords = [];
+let fanKeywords = [];
+let userleaveKeywords = [];
+
+
 // on charge les keywords pour chaque catégorie
 
 function loadIntents(intentType) {
@@ -18,9 +27,23 @@ function loadIntents(intentType) {
             console.log('Greetings Keywords:', greetingsKeywords);
         } else if (intentType === 'goodbye') {
             goodbyeKeywords = data;
-        } else {
+        } else if (intentType === 'thanks') {
             thanksKeywords = data;
-        }   
+        } else if (intentType === "introduce") {
+            introKeywords = data;
+        } else if (intentType === "jokes") {
+            jokeKeywords = data;
+        } else if (intentType === "talk_about_monsta") {
+            talkaboutKeywords = data;
+        } else if (intentType === "fav_song") {
+            favsongKeywords = data;
+        } else if (intentType === "upcoming_project") {
+            upcomingKeywords = data;
+        } else if (intentType === "fansupport") {
+            fanKeywords = data;
+        } else {
+            userleaveKeywords = data;
+        }
 
         console.log(`${intentType} Keywords:`, data); // Debugging
     })
@@ -45,9 +68,29 @@ document.addEventListener("DOMContentLoaded", function() {
     loadIntents('goodbye');
     loadIntents('thanks');
 
+    loadIntents('introduce');
+    loadIntents('jokes');
+    loadIntents('talk_about_monsta');
+    loadIntents('fav_song');
+    loadIntents('upcoming_project');
+    loadIntents('fansupport');
+    loadIntents('userleave');
+
+    // ------------------------
+
+    // loading answers
+
     loadAnswers('greetings');
     loadAnswers('goodbye');
     loadAnswers('thanks');
+
+    loadAnswers('introduce_self');
+    loadAnswers('jokes');
+    loadAnswers('talk_about_monstax');
+    loadAnswers('favorite_song');
+    loadAnswers('upcoming_projects');
+    loadAnswers('fan_support');
+    loadAnswers('user_wants_to_leave');
 
     setupChat();
 });
@@ -140,6 +183,48 @@ function getBotResponse(message, username) {
         // Sélectionner une réponse aléatoire parmi thanksAnswers
         const response = thanksAnswers[Math.floor(Math.random() * thanksAnswers.length)];
         return response.replace("{username}", username);
+    }
+    // Vérifier si le message contient un mot-clé de remerciement
+    else if (containsWholeWord(message, introKeywords)) {
+        // Sélectionner une réponse aléatoire parmi thanksAnswers
+        const response = introAnswers[Math.floor(Math.random() * introAnswers.length)];
+        return response.replace("{username}", username);
+    }
+    // Vérifier si le message contient un mot-clé de remerciement
+    else if (containsWholeWord(message, jokeKeywords)) {
+        // Sélectionner une réponse aléatoire parmi thanksAnswers
+        const response = jokesAnswers[Math.floor(Math.random() * jokesAnswers.length)];
+        return response.replace("{username}", username);
+    }
+    // Vérifier si le message contient un mot-clé de remerciement
+    else if (containsWholeWord(message, talkaboutKeywords)) {
+        // Sélectionner une réponse aléatoire parmi thanksAnswers
+        const response = talkaboutmonstaAnswers[Math.floor(Math.random() * talkaboutmonstaAnswers.length)];
+        return response.replace("{username}", username);
+    }
+    // Vérifier si le message contient un mot-clé de remerciement
+    else if (containsWholeWord(message, favsongKeywords)) {
+        // Sélectionner une réponse aléatoire parmi thanksAnswers
+        const response = favsongAnswers[Math.floor(Math.random() * favsongAnswers.length)];
+        return response.replace("{username}", username);
+    }
+    // Vérifier si le message contient un mot-clé de remerciement
+    else if (containsWholeWord(message, fanKeywords)) {
+        // Sélectionner une réponse aléatoire parmi thanksAnswers
+        const response = fansupportAnswers[Math.floor(Math.random() * fansupportAnswers.length)];
+        return response.replace("{username}", username);
+    }
+    // Vérifier si le message contient un mot-clé de remerciement
+    else if (containsWholeWord(message, upcomingKeywords)) {
+        // Sélectionner une réponse aléatoire parmi thanksAnswers
+        const response = upcomingAnswers[Math.floor(Math.random() * upcomingAnswers.length)];
+        return response.replace("{username}", username);
+    }
+    // Vérifier si le message contient un mot-clé de remerciement
+    else if (containsWholeWord(message, userleaveKeywords)) {
+        // Sélectionner une réponse aléatoire parmi thanksAnswers
+        const response = userleaveAnswers[Math.floor(Math.random() * userleaveAnswers.length)];
+        return response.replace("{username}", username);
     } else {
         return "I don't understand, can you repeat please?";
     }
@@ -153,6 +238,15 @@ let greetingsAnswers = [];
 let thanksAnswers = [];
 let goodbyeAnswers = [];
 
+let introAnswers = [];
+let jokesAnswers = [];
+let talkaboutmonstaAnswers = [];
+let favsongAnswers = [];
+let upcomingAnswers = [];
+let fansupportAnswers = [];
+let userleaveAnswers = [];
+
+
 // on charge les keywords pour chaque catégorie
 
 function loadAnswers(answerType) {
@@ -162,10 +256,33 @@ function loadAnswers(answerType) {
         if (answerType === 'greetings') {
             greetingsAnswers = data;
             console.log('Greetings Answers:', greetingsAnswers);
+
         } else if (answerType === 'goodbye') {
             goodbyeAnswers = data;
-        } else {
+            console.log('goodbye Answers:', goodbyeAnswers);
+
+        } else if (answerType === 'thanks') {
             thanksAnswers = data;
+            console.log('thanks Answers:', thanksAnswers);
+
+        } else if (answerType === 'introduce_self') {
+            introAnswers = data;
+            console.log('intro Answers:', introAnswers);
+
+        } else if (answerType === 'jokes') {
+            jokesAnswers = data;
+            console.log('jokes Answers:', jokesAnswers);
+
+        } else if (answerType === 'talk_about_monstax') {
+            talkaboutmonstaAnswers = data;
+        } else if (answerType === 'favorite_song') {
+            favsongAnswers = data;
+        } else if (answerType === 'upcoming_projects') {
+            upcomingAnswers = data;
+        } else if (answerType === 'fan_support') {
+            fansupportAnswers= data;
+        } else {
+             userleaveAnswers = data;
         }   
 
         console.log(`${answerType} Answers:`, data); // Debugging
