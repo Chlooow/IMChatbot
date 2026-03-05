@@ -52,8 +52,10 @@ If you would like to make a **financial contribution** to support this project, 
 
 <img width="601" height="820" alt="Capture d&#39;écran 2025-02-22 020859" src="https://github.com/user-attachments/assets/90b565c9-f5b5-4958-a112-2c97275e482e" />
 --- 
+
 <img width="1167" height="803" alt="Capture d&#39;écran 2025-02-25 204431" src="https://github.com/user-attachments/assets/cc21458e-7f80-4897-9c88-2e303bac394c" />
 ---
+
 <img width="950" height="825" alt="Capture d&#39;écran 2025-02-22 190330" src="https://github.com/user-attachments/assets/edb044e3-f7aa-4c79-9098-55757d0d8f77" />
 
 
